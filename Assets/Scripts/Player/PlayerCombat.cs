@@ -28,8 +28,6 @@ public class PlayerCombat : MonoBehaviour
     void Update()
     {
         
-
-        
         if(isAttacking) {
             if(Time.time < attackDuration) {
                 Debug.Log("finished Attacking");
