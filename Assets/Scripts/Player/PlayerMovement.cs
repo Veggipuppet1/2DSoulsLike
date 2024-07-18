@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
 
+        if(MainManager.Instance.spawnPointSet) gameObject.transform.position = MainManager.Instance.spawnPoint;
+
         Debug.Log(coll.bounds.size);
     }
 
